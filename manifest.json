@@ -1,0 +1,25 @@
+{
+    "name": "Multiplay",
+    "icons": [
+        {
+            "src": "/img/mult.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/img/mult96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/img/mult512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "background_color": "white",
+    "theme_color": "white",
+    "orientation": "portrait-primary",
+    "start_url": "/?source=pwa",
+    "display": "standalone"
+}

@@ -5,51 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <!--ios support-->
+    <link rel="apple-touch-icon" href="/img/mult96.png">
+    <meta name="apple-mobile-web-status-bar" content="#aa7700">
+    <meta name="theme-color" content="#aa7700">
     <link rel="stylesheet" href="style.css">
-    <title>Jeu memory</title>
+    
+    <title>Jeu de multiplication</title>
 </head>
 
 <body>
-<div class="container">
-    <div class="container__left">
-        <img src="img/avatar-user.png" alt="avatar">
-        <div class="left__info">
-            <div class="info__name">
-                souleymane
+<div class="container__body">
+    <div class="overlay"></div>
+        <form class="form__input">
+            <label for="name">Ecrire ton nom </label>
+            <input type="text" name="name" id="name">
+            <button  type="submit">Envoyer</button>
+        </form>
+    <div class="container">
+        <div class="container__left">
+            <img src="img/avatar-user.png" alt="avatar">
+            <div class="left__info">
+                <div class="info__name">
+                    User
+                </div>
+                <div class="score__content">
+                    <span>SCORE: <span class="user__score"> 0 </span></span>
+                </div>
             </div>
-            <div class="user__score">
-                SCORE = 0
-            </div>
-        </div>
-        <div class="text_content">
-        </div>
-    </div>
-    <div class="container__center">
-        <div class="numbers">
-            <span class="number_one">1</span>
-            <span> * </span>
-            <span class="number_two">3</span>
-            <span> = </span>
-            <span class="result">_</span>
-        </div>
-        <div id="board" class="board"></div>
-    </div>
-    <div class="container__right">
-        <img src="/img/avatar-ia.png" alt="">
-        <div class="right__info">
-            <div class="right__name">
-                IA
-            </div>
-            <div class="ia__score">
-                SCORE = 0
+            <div class="text_content">
             </div>
         </div>
-    <div class="text_content_ia">
-    </div>
-    </div>
+        <div class="container__center">
+                <h1>Multiplication</h1>
+            <button class="btn__reset">réinitialiser</button>
+            <div class="numbers">
+                <span class="number_one">1</span>
+                <span> X </span>
+                <span class="number_two">3</span>
+                <span> = </span>
+                <span class="result">_</span>
+            </div>
+            <div id="board" class="board"></div>
+        </div>
+        <div class="container__right">
+            <img src="/img/avatar-ia.png" alt="">
+            <div class="right__info">
+                <div class="right__name">
+                    IA
+                </div>
+                <div>
+                    <span>SCORE : <span class="ia__score"> 0 </span></span>
+                </div>
+            </div>
+        <div class="text_content_ia">
+        </div>
+        </div>
 
+    </div>
 </div>
-
     <script src="main.js"></script>
 </body>
 
